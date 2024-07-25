@@ -1,0 +1,13 @@
+
+<header>
+    <h1>Here are some pictures</h1>
+</header>
+<div class="container">
+    <div class="row">
+            <div class="col-4" *ngFor = 'let lst of appList'>
+                <img [src]= 'lst.url' height="70%" width="90%" >
+            </div>
+    </div>
+</div>
+
+<app-footer></app-footer>
